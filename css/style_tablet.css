@@ -103,6 +103,15 @@
     padding-bottom: 23px;
     border-bottom: 3px solid #e1d9bd;
 }
+.block:last-child { 
+    border-bottom: none;
+}
+.block:first-child { 
+    margin-top: 0;
+}
+.mt-content {
+    margin-top: 40px;
+}
 .article-img {
     width: 100%;
     object-fit: cover;
@@ -135,7 +144,7 @@
 }
 
 .aside {
-    width: 40%;
+    width: 280px;
 }
  
 .copyright {
@@ -217,7 +226,7 @@
 }
 
 
-.popup_hidden .form {
+.popup .form {
     min-width: fit-content;
 }
 
@@ -351,13 +360,6 @@ h6.nav-link {
     margin-top: 2px;
     margin-bottom: 0;
 }
-hr {
-    background-color:#e1d9bd;
-    border: none;
-    width: 65px;
-    height: 3px;
-    margin: 10px auto;
-}
 
 
 .blocks {
@@ -367,22 +369,48 @@ hr {
 }
 
 
-.popup_hidden {
+.popup_bg {
+    background-color: rgb(12,12,12, 0.6);
+    display: flex;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 10;
+    visibility: hidden;
+}
+
+
+
+.popup {
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
-    position: fixed;
-    top: 235px;
-    left: 190px;
-    right: 190px;
-    bottom: 160px;
+    position: absolute;
+    left: calc(50% - 200px);
+    top: 195px;
+    width: 400px;
+    height: 600px;
     z-index: 100;
     padding: 50px 20px 30px;
-    visibility: hidden;
-    
 }
 
-/* 
+h2::after, .nav-title > h3::after {
+    content: "";
+    display: block;
+    background-color:#e1d9bd;
+    border: none;
+    width: 65px;
+    height: 3px;
+    margin: 10px auto;
+    position: relative;
+} 
+
+
+
+/*  
+
 body::after {
     content: "";
     display: block;
@@ -408,8 +436,8 @@ body::after {
     left: 0;
     opacity: 0.6;
     z-index: 999;
-} 
-*/
+} */
+
 
 
 .trend {
@@ -482,15 +510,17 @@ body::after {
     display: flex;
     flex-wrap: wrap;
     min-width: 640px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
     margin: 15px auto 0;
+    align-self: flex-start;
 }
 
 .shop-item {
     display: flex;
     flex-direction: column;
-    padding-right: 3px;
+    padding-right: 10px;
+    padding-left: 10px;
     width: 50%;
     position: relative;
     z-index: 2;
@@ -511,8 +541,8 @@ body::after {
 }
 
 .shop-img {
-    width: 85%;
-    margin: auto;
+    width: 84%;
+    margin-left: 8%;
     background-repeat: no-repeat;
     background-position: top center;
     -webkit-background-size: cover;
@@ -531,7 +561,7 @@ body::after {
 .shop-content {
     margin: -30px 0 20px;
     padding: 50px 15px 30px;
-    height: 265px;
+    min-height: 265px; 
     box-sizing: border-box;
     border: 3px solid #e1d9bd;
 }
@@ -609,7 +639,7 @@ body::after {
     max-height: fit-content;
 }
 
-.trend > h3, .shop > h3, .popup_hidden > h3 {
+.trend > h2, .shop > h2, .popup > h2 {
     font-size: 18px;
     margin: 0 auto;
     text-transform: uppercase;
