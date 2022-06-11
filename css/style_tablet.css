@@ -614,11 +614,14 @@ body::after {
 
 .shop-items {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
     min-width: 640px;
     padding-left: 25px;
     padding-right: 25px;
     margin: 15px auto 0;
+    min-height: 320px;
+    height: fit-content;
     align-self: flex-start;
 }
 
@@ -652,7 +655,7 @@ body::after {
 .shop-content {
     margin: -30px 0 20px;
     padding: 50px 15px 30px;
-    min-height: 265px; 
+    height: 100%; 
     box-sizing: border-box;
     border: 3px solid #e1d9bd;
 }
