@@ -398,7 +398,7 @@ h6.nav-link {
 }
 
 
-h2::after, .nav-title > h3::after {
+h2::after, .nav-title > h4::after {
     content: "";
     display: block;
     background-color:#e1d9bd;
@@ -566,17 +566,6 @@ body::after {
     z-index: 2;
 }
 
-.shop1 {
-    background-image: url("../images/shop-item-mobile1.jpg");  
-}
-
-.shop2 {
-    background-image: url("../images/shop-item-mobile2.jpg");  
-}
-
-.shop3 {
-    background-image: url("../images/shop-item-mobile3.jpg");  
-}
 
 .shop-img {
     width: 84%;
@@ -588,7 +577,6 @@ body::after {
     -o-background-size: cover;
     background-size: cover;
     position: relative;
-    min-width: 300px;
     min-height: 285px;
     left: 0;
     right: 0;
@@ -615,7 +603,7 @@ body::after {
     color: #b59f5b
 }
 
-.shop-content h4 {
+.shop-content h3 {
     margin-top: 0;
     text-transform: uppercase;
     font-size: 16px;
@@ -649,7 +637,7 @@ body::after {
 }
 
 
-.trend-content h4 {
+.trend-content h3 {
     margin-top: 0;
     text-transform: uppercase;
     font-size: 1.2rem;
@@ -676,23 +664,23 @@ br {
     display: flex;
 }
 
-/* h3 */
+/* h4 */
 
-h3 {
+h4 {
     margin-top: 0;
     margin-bottom: 0;
     font-size: 16px;
 }
-.topic > h3 {
+.topic > h4 {
     margin-right: 20px;
 }
-.nav-title > h3 {
+.nav-title > h4 {
     margin-right: 0px;
 }
 
-/* h4 */
+/* h3 */
 
-.article-content h4 {
+.article-content h3 {
     margin-top: 0;
     text-transform: uppercase;
     font-size: 16px;

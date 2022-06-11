@@ -302,9 +302,14 @@ textarea.popup-text {
 .item:last-child {
     padding-bottom: 55px;
 }
+
 .nav-item {
     margin-top: 65px;
+} 
+.nav-item:first-child {
+    margin-top: 0;
 }
+
 .nav-img {
     width: 70px; 
     height: 70px;
@@ -375,7 +380,7 @@ h6.nav-link {
 }
 
 
-h2::after, .nav-title > h3::after {
+h2::after, .nav-title > h4::after {
     content: "";
     display: block;
     background-color:#e1d9bd;
@@ -500,19 +505,6 @@ body::after {
 }
 
 
-.shop1 {
-    background-image: url("../images/shop-item-desk1.jpg");  
-}
-
-
-.shop2 {
-    background-image: url("../images/shop-item-desk2.jpg");  
-}
-
-.shop3 {
-    background-image: url("../images/shop-item-desk3.jpg");  
-}
-
 .shop-img {
     width: 84%;
     margin-left: 8%;
@@ -537,6 +529,7 @@ body::after {
     margin: -30px 0 50px;
     padding: 50px 25px;
     box-sizing: border-box;
+    height: 100%;
     border: 3px solid #e1d9bd;
 }
 
@@ -552,8 +545,8 @@ body::after {
     color: #b59f5b
 }
 
-/* the same as .article-content h4*/
-.shop-content h4 {
+/* the same as .article-content h3*/
+.shop-content h3 {
     margin-top: 0;
     text-transform: uppercase;
     font-size: 20px;
@@ -597,8 +590,8 @@ body::after {
     padding: 28px 5px 25px 35px;
 }
 
-/* the same as .article-content h4*/
-.trend-content h4 {
+/* the same as .article-content h3*/
+.trend-content h3 {
     margin-top: 0;
     text-transform: uppercase;
     font-size: 1.2rem;
@@ -619,18 +612,18 @@ body::after {
 } 
 
 
-h3 {
+h4 {   
     margin-top: 0;
     margin-bottom: 0;
     font-size: 14px;
 }
-.topic > h3 {
+.topic > h4 {
     margin-right: 20px;
 }
-.nav-title > h3 {
+.nav-title > h4 {
     margin-right: 0px;
 }
-.article-content h4 {
+.article-content h3 {
     margin-top: 0;
     text-transform: uppercase;
     font-size: 20px;
