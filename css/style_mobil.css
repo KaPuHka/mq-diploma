@@ -474,6 +474,22 @@ body::after {
         right: 25px;
         padding: 28px 5px 25px 35px;
     }
+
+
+    h4 {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 16px;
+    }
+
+    .trend-content h3 {
+        margin-top: 0;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        color: #ffffff;
+        margin-bottom: 1.2rem;
+        margin-right: 0.5rem;
+    }
 }
 
 @media screen and (orientation:landscape){
@@ -502,10 +518,25 @@ body::after {
         text-align:left;
         z-index: 1;
         border: 3px solid #e1d9bd;
-        bottom: 10px;
-        left: 15px;
-        right: 25px;
-        padding: 15px 5px 5px 10px;
+        bottom: 2vw;
+        left: 3vw;
+        right: 5vw;
+        padding: 3vw 1vw 1vw 2vw;
+    }
+
+
+    h4 {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 3vw;
+    }
+
+    .trend-content h3 {
+        margin-top: 0;
+        text-transform: uppercase;
+        font-size: 3vw;
+        color: #ffffff;
+        margin-bottom: 3vw;
     }
 }
 
@@ -636,16 +667,6 @@ body::after {
     padding-right: 0;
 }
 
-
-.trend-content h3 {
-    margin-top: 0;
-    text-transform: uppercase;
-    font-size: 1.2rem;
-    color: #ffffff;
-    margin-bottom: 1.2rem;
-    margin-right: 0.5rem;
-}
-
 .trend-img {
     width: 100%;
     object-fit: cover;
@@ -666,11 +687,6 @@ br {
 
 /* h4 */
 
-h4 {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 16px;
-}
 .topic > h4 {
     margin-right: 20px;
 }
