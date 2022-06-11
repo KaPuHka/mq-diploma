@@ -137,6 +137,7 @@
 }
 .topic {
     display: flex; 
+    flex-wrap: wrap;
     text-transform: uppercase;
     color:#b59f5b;
     font-size: 14px;
@@ -445,7 +446,7 @@ body::after {
     margin-top: 30px;
 }
 
-@media screen and (orientation:portrait){
+@media screen and (orientation:portrait) {
     
 
     .trend-items {
@@ -492,7 +493,7 @@ body::after {
     }
 }
 
-@media screen and (orientation:landscape){
+@media screen and (orientation:landscape) {
     
     .trend-items {
         display: flex;
