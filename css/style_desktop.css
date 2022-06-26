@@ -650,6 +650,27 @@ h4 {
     margin: 27px 0;
 }
 
+
+.hamburger {
+    margin-top: 20px;
+    margin-left: 72%;
+    display: none;
+}
+
+.line::after {
+    content: "";
+    display: block;
+    background-color:#ffffff;
+    border: none;
+    width: 22px;
+    height: 3px;
+    margin: 5px auto;
+    position: relative;
+}
+.line:first-child:after {
+    margin-top: 30px;
+}
+
  .menu {
     text-transform: uppercase;
     margin: 40px 0;
