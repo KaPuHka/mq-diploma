@@ -380,6 +380,7 @@ h6.nav-link {
     right: 0px;
     bottom: 0px;
     z-index: 10;
+    overflow:scroll;
     visibility: hidden;
 }
 
